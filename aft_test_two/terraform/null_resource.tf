@@ -9,3 +9,9 @@ resource "aws_ssm_parameter" "test_ssm_param" {
   type = "String"
   value = "test_value"
 }
+
+resource "aws_ssm_parameter" "test_ssm_param_2" {
+  name = "/test_param_2"
+  type = "String"
+  value = "test_value_2"
+}
