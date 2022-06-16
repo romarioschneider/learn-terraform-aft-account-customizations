@@ -1,5 +1,8 @@
 provider "aws" {
   region = "eu-central-1"
+  assume_role {
+    role_arn = "arn:aws:iam::741489290495:role/AWSAFTExecution"
+  }
 }
 
 resource "null_resource" "test_trigger_1" {
