@@ -84,4 +84,3 @@ region = $(aws ec2 describe-availability-zones --query 'AvailabilityZones[0].[Re
 cidr = $(python ./python/source/get_cidr_range.py)
 aws ssm put-parameter --name /$account/$region/vpc/cidr --value $cidr
 ```
-test commit
