@@ -15,7 +15,6 @@ provider "aws" {
 
 provider "aws" {
   alias = "aws_sso"
-  region = "{{ provider_region }}"
   assume_role {
     role_arn    = "arn:aws:iam::596966523393:role/sso-manager"
   }
